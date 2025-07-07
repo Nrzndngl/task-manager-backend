@@ -84,6 +84,37 @@ All /api/tasks routes require a valid Bearer token in headers.
 - Dotenv
 - Nodemon
 
+---
+
+## 👤 Author
+Niranjan Dangol
+GitHub: @Nrzndngl
 
 
 
+my-project/
+│
+├── README.md              # Main project overview and setup instructions
+├── LICENSE                # License information
+├── .gitignore             # Files and directories to be ignored by Git
+├── requirements.txt       # Dependencies (for Python projects)
+│
+├── docs/                  # Documentation files
+│   ├── index.md           # Extended documentation homepage
+│   ├── installation.md    # Installation instructions
+│   ├── usage.md           # Usage examples
+│   ├── api.md             # API reference (if applicable)
+│   └── faq.md             # Frequently Asked Questions
+│
+├── src/                   # Source code
+│   └── your_module/       # Your main module or package
+│
+├── tests/                 # Unit and integration tests
+│   └── test_main.py
+│
+├── data/                  # Data files (optional)
+│   ├── raw/
+│   └── processed/
+│
+└── assets/                # Images, diagrams, or other media
+    └── logo.png
