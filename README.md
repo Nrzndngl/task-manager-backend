@@ -17,7 +17,6 @@ A simple and secure backend REST API built with **Node.js**, **Express**, and **
 ---
 
 ## 📁 Folder Structure
-
 task-manager-backend/
 ├── config/ # Database connection
 ├── controllers/ # Route logic (auth, tasks)
