@@ -55,48 +55,38 @@ task-manager-backend/
 
 ## 📡 API Endpoints
 🔐 Auth Routes (/api/auth)
-Method	Endpoint	Description
-POST	/register	Register a new user
-POST	/login	Login and get token
+Method         Endpoint       Description
+POST           /register        Register a new user
+POST	         /login           Login and get token
 
 ## 📌 Task Routes (/api/tasks) — (Protected)
-Method	Endpoint	Description
-GET	/	Get all user tasks
-POST	/	Create a new task
-PUT	/:id	Update a task by ID
-DELETE	/:id	Delete a task by ID
+Method         Endpoint       Description
+GET               /           Get all user tasks
+POST              /	         Create a new task
+PUT               /:id	      Update a task by ID
+DELETE            /:id	      Delete a task by ID
 
 All /api/tasks routes require a valid Bearer token in headers.
 
 ## 🧪 Example Usage (with Postman)
 Register:
-
-css
-Copy
-Edit
 POST /api/auth/register
 Body: { name, email, password }
 Login:
 
-css
-Copy
-Edit
 POST /api/auth/login
 Body: { email, password }
 Create Task:
 
-css
-Copy
-Edit
 POST /api/tasks
 Header: Authorization: Bearer <token>
 Body: { title, description }
 
 ## 🔒 Tech Stack
-Node.js
-Express
-MongoDB + Mongoose
-JWT (jsonwebtoken)
-Bcrypt.js
-Dotenv
-Nodemon
+- Node.js
+- Express
+- MongoDB + Mongoose
+- JWT (jsonwebtoken)
+- Bcrypt.js
+- Dotenv
+- Nodemon
