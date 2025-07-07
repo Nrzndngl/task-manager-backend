@@ -72,38 +72,7 @@ task-manager-backend/
 | PUT    | `/:id`   | Update a task by ID |
 | DELETE | `/:id`   | Delete a task by ID |
 
----
-
 All /api/tasks routes require a valid Bearer token in headers.
-
-## 🧪 Example Usage (with Postman)
-- Register:
-
-POST /api/auth/register
-Body (JSON):
-{
-  "name": "Niranjan Dangol",
-  "email": "niranjan@example.com",
-  "password": "secret123"
-}
-
-POST /api/auth/login
-Body (JSON):
-{
-  "email": "niranjan@example.com",
-  "password": "secret123"
-}
-
-
-POST /api/tasks
-Headers:
-Authorization: Bearer <your-jwt-token>
-
-Body (JSON):
-{
-  "title": "Learn Express",
-  "description": "Study how to build REST APIs"
-}
 
 ---
 
