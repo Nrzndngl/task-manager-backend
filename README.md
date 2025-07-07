@@ -16,34 +16,20 @@ A simple and secure backend REST API built with **Node.js**, **Express**, and **
 
 ---
 
-## 📁 Folder Structure
-
-task-manager-backend/
-├── config/ # Database connection
-├── controllers/ # Route logic (auth, tasks)
-├── middleware/ # Auth middleware
-├── models/ # Mongoose models (User, Task)
-├── routes/ # Express route handlers
-├── .env # Environment variables
-├── server.js # App entry point
-└── package.json # Project config & scripts
-
-
-
-
 
 ## 📁 Folder Structure
+
+```
 task-manager-backend/
-├── config/         # Database connection setup (e.g., Mongoose config)
-├── controllers/    # Route logic and business rules (e.g., auth, task handlers)
-├── middleware/     # Custom Express middleware (e.g., authentication, error handling)
-├── models/         # Mongoose models (e.g., User, Task schemas)
-├── routes/         # Express route definitions (e.g., /api/auth, /api/tasks)
-├── .env            # Environment variables (should be in .gitignore)
-├── server.js       # Main entry point for the Express app
-└── package.json    # Project metadata, dependencies, and scripts
-
-
+├── config/           # Database connection setup (e.g., Mongoose config)
+├── controllers/      # Route logic and business rules (e.g., auth, task handlers)
+├── middleware/       # Custom Express middleware (e.g., authentication, error handling)
+├── models/           # Mongoose models (e.g., User, Task schemas)
+├── routes/           # Express route definitions (e.g., /api/auth, /api/tasks)
+├── .env              # Environment variables (should be in .gitignore)
+├── server.js         # Main entry point for the Express app
+└── package.json      # Project metadata, dependencies, and scripts
+```
 
 
 ---
