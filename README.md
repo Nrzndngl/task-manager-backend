@@ -55,32 +55,51 @@ task-manager-backend/
 
 ## 📡 API Endpoints
 🔐 Auth Routes (/api/auth)
-Method         Endpoint       Description
-POST           /register        Register a new user
-POST	         /login           Login and get token
+| Method | Endpoint    | Description         |
+| ------ | ----------- | ------------------- |
+| POST   | `/register` | Register a new user |
+| POST   | `/login`    | Login and get token |
+
 
 ## 📌 Task Routes (/api/tasks) — (Protected)
-Method         Endpoint       Description
-GET               /           Get all user tasks
-POST              /	         Create a new task
-PUT               /:id	      Update a task by ID
-DELETE            /:id	      Delete a task by ID
+| Method | Endpoint | Description         |
+| ------ | -------- | ------------------- |
+| GET    | `/`      | Get all user tasks  |
+| POST   | `/`      | Create a new task   |
+| PUT    | `/:id`   | Update a task by ID |
+| DELETE | `/:id`   | Delete a task by ID |
+
 
 All /api/tasks routes require a valid Bearer token in headers.
 
 ## 🧪 Example Usage (with Postman)
 Register:
 POST /api/auth/register
-Body: { name, email, password }
-Login:
+Body (JSON):
+{
+  "name": "Niranjan Dangol",
+  "email": "niranjan@example.com",
+  "password": "secret123"
+}
 
 POST /api/auth/login
-Body: { email, password }
-Create Task:
+Body (JSON):
+{
+  "email": "niranjan@example.com",
+  "password": "secret123"
+}
+
 
 POST /api/tasks
-Header: Authorization: Bearer <token>
-Body: { title, description }
+Headers:
+Authorization: Bearer <your-jwt-token>
+
+Body (JSON):
+{
+  "title": "Learn Express",
+  "description": "Study how to build REST APIs"
+}
+
 
 ## 🔒 Tech Stack
 - Node.js
@@ -90,3 +109,7 @@ Body: { title, description }
 - Bcrypt.js
 - Dotenv
 - Nodemon
+
+
+
+
