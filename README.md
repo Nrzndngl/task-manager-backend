@@ -17,6 +17,7 @@ A simple and secure backend REST API built with **Node.js**, **Express**, and **
 ---
 
 ## 📁 Folder Structure
+
 task-manager-backend/
 ├── config/ # Database connection
 ├── controllers/ # Route logic (auth, tasks)
@@ -26,6 +27,22 @@ task-manager-backend/
 ├── .env # Environment variables
 ├── server.js # App entry point
 └── package.json # Project config & scripts
+
+
+
+
+
+## 📁 Folder Structure
+task-manager-backend/
+├── config/         # Database connection setup (e.g., Mongoose config)
+├── controllers/    # Route logic and business rules (e.g., auth, task handlers)
+├── middleware/     # Custom Express middleware (e.g., authentication, error handling)
+├── models/         # Mongoose models (e.g., User, Task schemas)
+├── routes/         # Express route definitions (e.g., /api/auth, /api/tasks)
+├── .env            # Environment variables (should be in .gitignore)
+├── server.js       # Main entry point for the Express app
+└── package.json    # Project metadata, dependencies, and scripts
+
 
 
 
@@ -87,34 +104,5 @@ All /api/tasks routes require a valid Bearer token in headers.
 ---
 
 ## 👤 Author
-Niranjan Dangol
-GitHub: @Nrzndngl
-
-
-
-my-project/
-│
-├── README.md              # Main project overview and setup instructions
-├── LICENSE                # License information
-├── .gitignore             # Files and directories to be ignored by Git
-├── requirements.txt       # Dependencies (for Python projects)
-│
-├── docs/                  # Documentation files
-│   ├── index.md           # Extended documentation homepage
-│   ├── installation.md    # Installation instructions
-│   ├── usage.md           # Usage examples
-│   ├── api.md             # API reference (if applicable)
-│   └── faq.md             # Frequently Asked Questions
-│
-├── src/                   # Source code
-│   └── your_module/       # Your main module or package
-│
-├── tests/                 # Unit and integration tests
-│   └── test_main.py
-│
-├── data/                  # Data files (optional)
-│   ├── raw/
-│   └── processed/
-│
-└── assets/                # Images, diagrams, or other media
-    └── logo.png
+- Niranjan Dangol
+- GitHub: @Nrzndngl
