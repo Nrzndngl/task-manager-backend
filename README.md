@@ -51,16 +51,15 @@ task-manager-backend/
 4. **Run the development server:**
    ```bash
    npm run dev
-   
-Make sure nodemon is installed. Use npx nodemon server.js if not globally installed.
+   Make sure nodemon is installed. Use npx nodemon server.js if not globally installed.
 
-📡 API Endpoints
+## 📡 API Endpoints
 🔐 Auth Routes (/api/auth)
 Method	Endpoint	Description
 POST	/register	Register a new user
 POST	/login	Login and get token
 
-📌 Task Routes (/api/tasks) — (Protected)
+## 📌 Task Routes (/api/tasks) — (Protected)
 Method	Endpoint	Description
 GET	/	Get all user tasks
 POST	/	Create a new task
@@ -69,7 +68,7 @@ DELETE	/:id	Delete a task by ID
 
 All /api/tasks routes require a valid Bearer token in headers.
 
-🧪 Example Usage (with Postman)
+## 🧪 Example Usage (with Postman)
 Register:
 
 css
@@ -92,17 +91,12 @@ Edit
 POST /api/tasks
 Header: Authorization: Bearer <token>
 Body: { title, description }
-🔒 Tech Stack
+
+## 🔒 Tech Stack
 Node.js
-
 Express
-
 MongoDB + Mongoose
-
 JWT (jsonwebtoken)
-
 Bcrypt.js
-
 Dotenv
-
 Nodemon
