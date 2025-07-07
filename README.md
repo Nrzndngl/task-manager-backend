@@ -73,7 +73,7 @@ task-manager-backend/
 All /api/tasks routes require a valid Bearer token in headers.
 
 ## 🧪 Example Usage (with Postman)
--- Register:
+- Register:
 
 POST /api/auth/register
 Body (JSON):
